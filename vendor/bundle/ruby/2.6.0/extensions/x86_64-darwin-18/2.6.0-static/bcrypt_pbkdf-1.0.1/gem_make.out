@@ -1,0 +1,19 @@
+current directory: /Users/niiborimasao/git/rails_projects/worker_app/vendor/bundle/ruby/2.6.0/gems/bcrypt_pbkdf-1.0.1/ext/mri
+/Users/niiborimasao/.rbenv/versions/2.6.3/bin/ruby -I /Users/niiborimasao/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20191028-42627-1al0ism.rb extconf.rb
+creating Makefile
+
+current directory: /Users/niiborimasao/git/rails_projects/worker_app/vendor/bundle/ruby/2.6.0/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR=" clean
+
+current directory: /Users/niiborimasao/git/rails_projects/worker_app/vendor/bundle/ruby/2.6.0/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR="
+compiling bcrypt_pbkdf.c
+compiling bcrypt_pbkdf_ext.c
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.bundle
+
+current directory: /Users/niiborimasao/git/rails_projects/worker_app/vendor/bundle/ruby/2.6.0/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bcrypt_pbkdf_ext.bundle ./.gem.20191028-42627-1bzel0t

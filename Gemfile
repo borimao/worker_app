@@ -11,6 +11,9 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'mysql2'
 gem 'unicorn',      '5.4.1' 
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'redis-namespace'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
