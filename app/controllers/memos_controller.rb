@@ -14,11 +14,11 @@ class MemosController < ApplicationController
         @memos = Memo.all
         @memo_new = Memo.new
         @memo = Memo.find(params[:id])
-        p "aaa"
     end
 
     def update
         UpdateWorker.perform_async(params[:id],memo_params[:title],memo_params[:text])
+        redirect_to memos_path
     end
 
     def destroy
