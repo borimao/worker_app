@@ -28,6 +28,8 @@ set :rbenv_ruby, '2.6.3'
 #出力するログのレベル。
 set :log_level, :debug
 
+set :sidekiq_role, :web
+
 namespace :deploy do
   desc 'Restart application'
   task :restart do
