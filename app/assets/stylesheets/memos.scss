@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.memos{
+    width: 400px;
+    height: 100%;
+    ul{
+        height: 100%;
+        overflow: scroll;
+        text-decoration: none;
+        background-color: rgb(39, 39, 39);
+        .memo_create{
+            .add_text{
+                height: 40px;
+                width: 300px;
+            }
+        }
+        li{
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            border-bottom: rgb(141, 141, 141) 1px solid;
+            display: flex;
+            .memos_title{
+                width: calc(100% - 55px);
+                height: 100%;
+                padding-left: 5px;
+                position: relative;
+                a{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .memos_delete{
+                width: 49px;
+                border-right: rgb(141, 141, 141) 1px solid;
+                text-align: center;
+            }
+        }
+        .edit_li{
+            background-color: rgb(8, 218, 255);
+            .memos_delete{
+                background-color: rgb(39, 39, 39);
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+.memo_edit{
+    width: calc(100% - 300px);
+    height: 100%;
+    .memo_title{
+        width: 100%;
+        height: 50px;
+        .m_submit{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+            height: 50px;
+            width: 80px;
+            background-color: rgb(8, 218, 255);
+            color: #fff;
+            font-size: 16px;
+        }
+        .m_title {
+            height: calc(100% - 4px);
+            width: calc(100% - 102px);
+            padding-left: 10px;
+            font-size: 16px;
+            background-color: rgb(224, 224, 224);
+        }
+    }
+    .m_text{
+        width: calc(100% - 30px);
+        height: calc(100vh - 80px);
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+}

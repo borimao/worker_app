@@ -46,6 +46,7 @@ group :development, :test do
   gem 'capistrano-rbenv'
   gem 'ed25519'
   gem 'bcrypt_pbkdf'
+  gem 'capistrano-sidekiq', github: 'seuros/capistrano-sidekiq'
 end
 
 group :production, :staging do

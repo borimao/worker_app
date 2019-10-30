@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
+  root 'memos#index'
+  resources :memos
 
   require 'sidekiq/web'
   mount Sidekiq::Web => '/sidekiq'

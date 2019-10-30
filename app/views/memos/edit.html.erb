@@ -1,0 +1,28 @@
+<div class="memos">
+    <ul>
+        <li class="memo_create">
+            <%= form_for(@memo_new) do |f| %>
+                <div><%= f.text_field :title, class: "add_text", :placeholder => "タイトル" %><%= f.submit '追加', class: "add_submit" %></div>
+            <% end %>
+        </li>
+        <% @memos.each do |memo| %>
+            <% if memo.id != @memo.id %>
+                <li>
+                    <div class="memos_title"><%= memo.title %><%= link_to '', edit_memo_path(memo) %></div>
+                </li>
+            <% else %>
+                <li class="edit_li"> 
+                    <div class="memos_delete"><%= link_to '削除', memo_path(memo), method: :delete %></div>
+                    <div class="memos_title"><%= memo.title %></div>
+                </li>
+            <% end %>
+        <% end %>
+        
+    </ul>
+</div>
+<div class="memo_edit">
+    <%= form_for(@memo) do |f| %>
+        <div class="memo_title"><%= f.submit '保存', class: "m_submit"%><%= f.text_field :title, class: "m_title" %></div>
+        <div><%= f.text_area :text, class: "m_text" %></div>
+    <% end %>
+</div>
