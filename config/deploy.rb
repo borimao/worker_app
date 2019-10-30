@@ -7,7 +7,7 @@ set :application, 'worker_app'
 # cloneするgitのレポジトリ
 set :repo_url, 'https://github.com/borimao/worker_app.git'
 
-# deployするブランチ。デフォルトはmasterなのでなくても可。
+# deployするブランチ。デフォルトはmasterなのでなくても可
 set :branch, 'master'
 
 # deploy先のディレクトリ。 
