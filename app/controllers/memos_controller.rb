@@ -18,7 +18,6 @@ class MemosController < ApplicationController
 
     def update
         UpdateWorker.perform_async(params[:id],memo_params[:title],memo_params[:text])
-        redirect_to memos_path
     end
 
     def destroy
