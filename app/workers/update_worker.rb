@@ -8,5 +8,6 @@ class UpdateWorker
             title:title,
             text:text
         )
+        p "update!"
     end
 end

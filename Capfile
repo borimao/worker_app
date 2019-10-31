@@ -5,6 +5,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails/assets' 
 require 'capistrano/rails/migrations'
 require 'capistrano/sidekiq' 
+require 'capistrano/sidekiq/monit'
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
