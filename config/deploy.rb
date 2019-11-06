@@ -1,5 +1,3 @@
-require 'sidekiq/capistrano'
-
 # capistranoのバージョン固定
 lock '3.11.2'
 
