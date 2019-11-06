@@ -30,10 +30,10 @@ set :rbenv_ruby, '2.6.3'
 #出力するログのレベル。
 set :log_level, :debug
 
-#set :sidekiq_role, :web
-set :pty,  true
-set :sidekiq_config, -> { File.join(shared_path, 'config', 'sidekiq.yml') }
-set :sidekiq_monit_conf_dir, '/etc/monit.d'
+set :sidekiq_role, :web
+#set :pty,  true
+#set :sidekiq_config, -> { File.join(shared_path, 'config', 'sidekiq.yml') }
+#set :sidekiq_monit_conf_dir, '/etc/monit.d'
 
 
 namespace :deploy do
