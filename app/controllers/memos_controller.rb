@@ -1,10 +1,12 @@
 class MemosController < ApplicationController
     def index
+        SampleWorker.perform_async('aaa')
         @memos = Memo.all
         @memo = Memo.new
     end
 
     def create 
+        SampleWorker.perform_async('aaa')
         @memo  = Memo.create(memo_params)
         p @memo.id
         redirect_to edit_memo_path(@memo)
@@ -17,6 +19,7 @@ class MemosController < ApplicationController
     end
 
     def update
+        SampleWorker.perform_async('aaa')
         UpdateWorker.perform_async(params[:id],memo_params[:title],memo_params[:text])
     end
 

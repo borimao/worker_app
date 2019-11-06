@@ -1,17 +1,7 @@
-#:verbose: false
-#:pidfile: ./tmp/pids/sidekiq.pid
-#:logfile: ./log/sidekiq.log
-#:concurrency: 10
-#:queues:
- # - default
- # - test
-
 :verbose: false
-:timeout: 15
-:concurrency: 2
-staging:
-  :concurrency: 5
-production:
-  :concurrency: 5
+:pidfile: ./tmp/pids/sidekiq.pid
+:logfile: ./log/sidekiq.log
+:concurrency:  25
 :queues:
-  - high
+  - default
+  - event

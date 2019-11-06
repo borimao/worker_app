@@ -2,7 +2,7 @@
     <ul>
         <li class="memo_create">
             <%= form_for(@memo_new) do |f| %>
-                <div><%= f.text_field :title, class: "add_text", :placeholder => "タイトル　ああ" %><%= f.submit '追加', class: "add_submit" %></div>
+                <div><%= f.text_field :title, class: "add_text", :placeholder => "タイトル" %><%= f.submit '追加', class: "add_submit" %></div>
             <% end %>
         </li>
         <% @memos.each do |memo| %>
