@@ -14,6 +14,7 @@ gem 'unicorn',      '5.4.1'
 gem 'sidekiq'
 gem 'sinatra', require: false
 gem 'redis-namespace'
+gem 'capistrano-rbenv'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
